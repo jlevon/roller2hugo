@@ -45,7 +45,7 @@ for entry in d.entries:
 		categories = ','.join([str(v.label) for v in entry.categories])
 		print(categories)
 
-	path = os.path.join(outdir, slug + '.md')
+	path = os.path.join(outdir, slug + '.html')
 	print('writing %s' % path)
 
 	file = open(path, 'w')
